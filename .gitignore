@@ -1,0 +1,48 @@
+# Compiled C files
+*.exe
+*.o
+*.obj
+*.out
+*.a
+*.so
+*.dll
+
+# Compiled Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Java build directories
+target/
+build/
+out/
+bin/
+dist/
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
+.eclipse/
+.settings/
+.project
+.classpath
+
+# OS specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
