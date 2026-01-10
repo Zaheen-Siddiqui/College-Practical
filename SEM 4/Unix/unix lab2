@@ -1,0 +1,155 @@
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ variable_name="value"
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo $variable_name
+value
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ add(){
+> echo "Addition: $(($1 + $2))"
+> }
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ subtract(){ echo "Subtraction: $(($1 - $2))" }
+> }
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ multiply(){ echo "Multiplication: $(($1 * $2))"; }
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ divide(){
+> if [ $2 -eq 0]; then
+> 
+Display all 2281 possibilities? (y or n)
+> ^C
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ divide(){
+> if [ $2 -eq 0]; then
+> echo "Division by 0 is not allowed."
+> else
+> echo "Division: $(($1 / $2))"
+> fi
+> }
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter first number"
+Enter first number
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter second  number"
+Enter second  number
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read num1
+47
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read num2
+69
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Select operation"
+Select operation
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "1. ^C
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "1. Addition"
+1. Addition
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "2.Subtraction"
+2.Subtraction
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "3. Multiplication"
+3. Multiplication
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "4. Division"
+4. Division
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read op
+1
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ case $op in
+> 1)
+> add $num1 $num2
+> ;;
+> 2) subtract $num1 $num2; ;;
+> 3) multiply $num1 $num2; ;;
+> 4) divide $num1 $num2; ;;
+> *) echo "Invalid operation" ;;
+> esac
+Addition: 116
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read op
+1
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ case $op in 1) add $num1 $num2; ;; 2) subtract $num1 $num2; ;; 3) multiply $num1 $num2; ;; 4) divide $num1 $num2; ;; *) echo "Invalid operation" ;; esac
+Addition: 116
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read op
+4
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ case $op in 1) add $num1 $num2; ;; 2) subtract $num1 $num2; ;; 3) multiply $num1 $num2; ;; 4) divide $num1 $num2; ;; *) echo "Invalid operation" ;; esac
+bash: [: missing `]'
+Division: 0
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ calc_simp_int (){
+> prin=$1
+> rate=$2
+> time=$3
+> int=$(echo "scale=2; ($prin * rate *time) / 100" | bc)
+> echo "Simple interest: $int"
+> }
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter the principal"
+Enter the principal
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter the rate of interest"
+Enter the rate of interest
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter the time period"
+Enter the time period
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read prin
+10000
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read rate
+100
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read time
+20
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ calc^C
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ calc_simp_int $prin $rate $time
+Simple interest: 0
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read prin
+10
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read rate
+10
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read time
+1
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ calc_simp_int $prin $rate $time
+Simple interest: 0
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find largest() { 
+bash: syntax error near unexpected token `('
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find_largest() {
+> if [ $1 -gt $2 ] && [ $1 -gt $3 }; then
+> echo "largest number is $1"
+> elif [ $2 -gt $1 ] && [ $2 -gt $3 }; then echo "largest number is $2"
+> }
+bash: syntax error near unexpected token `}'
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find_largest() { if [ $1 -gt $2 ] && [ $1 -gt $3 ]; then echo "largest number is $1"; elif [ $2 -gt $1 ] && [ $2 -gt $3 ]; then echo "largest number is $2"
+> else echo "largest number is $3"
+> fi
+> }
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter first number"
+Enter first number
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter second  number"
+Enter second  number
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter third  number"
+Enter third  number
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read num1
+12
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read num
+6
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read num2
+6
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read num3
+69+
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read num3
+69
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ 
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find_largest() $ num1 $num2 $num3
+bash: syntax error near unexpected token `$'
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find_largest() $num1 $num2 $num3
+bash: syntax error near unexpected token `$num1'
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find_largest $num1 $num2 $num3
+largest number is 69
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ 
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find_largest() $ num1 $num2 $num3
+bash: syntax error near unexpected token `$'
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find_largest() $num1 $num2 $num3
+bash: syntax error near unexpected token `$num1'
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ find_largest $num1 $num2 $num3
+largest number is 69
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ leap_year(0 {
+bash: syntax error near unexpected token `0'
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ leap_year( {
+bash: syntax error near unexpected token `{'
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ leap_year() {
+> yr=$1
+> if[ $(($yr % 4)) -ne 0 ]; then
+bash: syntax error near unexpected token `then'
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ leap_year() { yr=$1; if [ $(($yr % 4)) -ne 0 ]; then
+> echo "$yr is not a leap year"
+> elif [ $(($yr % 100)) -ne 0 ] && [ $(($yr % 400)) - ne 0]; then echo "$yr is not a leap year"
+> else echo "$yr is a leap year"
+> fi
+> }
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ echo "Enter a year"
+Enter a year
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ read yr
+2020
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ leap_year $yr
+bash: [: missing `]'
+2020 is a leap year
+dbit@IT2-40:~/Desktop/56_zaheen/Unix$ 

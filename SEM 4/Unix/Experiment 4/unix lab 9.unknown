@@ -1,0 +1,476 @@
+dbit@IT2-36:~/Desktop/termopobgtn$ ps
+    PID TTY          TIME CMD
+   2678 pts/0    00:00:00 bash
+   2685 pts/0    00:00:00 ps
+dbit@IT2-36:~/Desktop/termopobgtn$ pstree
+systemd─┬─ModemManager───2*[{ModemManager}]
+        ├─NetworkManager───2*[{NetworkManager}]
+        ├─accounts-daemon───2*[{accounts-daemon}]
+        ├─acpid
+        ├─anacron
+        ├─avahi-daemon───avahi-daemon
+        ├─colord───2*[{colord}]
+        ├─cron
+        ├─cups-browsed───2*[{cups-browsed}]
+        ├─cupsd───dbus
+        ├─dbus-daemon
+        ├─fwupd───4*[{fwupd}]
+        ├─gdm3─┬─gdm-session-wor─┬─gdm-wayland-ses─┬─gnome-session-b───2*[{gnom+
+        │      │                 │                 └─2*[{gdm-wayland-ses}]
+        │      │                 └─2*[{gdm-session-wor}]
+        │      └─2*[{gdm3}]
+        ├─gnome-keyring-d───3*[{gnome-keyring-d}]
+        ├─irqbalance───{irqbalance}
+        ├─2*[kerneloops]
+        ├─networkd-dispat
+        ├─packagekitd───2*[{packagekitd}]
+        ├─polkitd───2*[{polkitd}]
+        ├─power-profiles-───2*[{power-profiles-}]
+        ├─rsyslogd───3*[{rsyslogd}]
+        ├─rtkit-daemon───2*[{rtkit-daemon}]
+        ├─snapd───18*[{snapd}]
+        ├─sshd
+        ├─switcheroo-cont───2*[{switcheroo-cont}]
+        ├─systemd─┬─(sd-pam)
+        │         ├─at-spi2-registr───2*[{at-spi2-registr}]
+        │         ├─dbus-daemon
+        │         ├─dconf-service───2*[{dconf-service}]
+        │         ├─evolution-addre───5*[{evolution-addre}]
+        │         ├─evolution-calen───8*[{evolution-calen}]
+        │         ├─evolution-sourc───3*[{evolution-sourc}]
+        │         ├─2*[gjs───10*[{gjs}]]
+        │         ├─gnome-session-b─┬─at-spi-bus-laun─┬─dbus-daemon
+        │         │                 │                 └─3*[{at-spi-bus-laun}]
+        │         │                 ├─deja-dup-monito───3*[{deja-dup-monito}]
+        │         │                 ├─evolution-alarm───5*[{evolution-alarm}]
+        │         │                 ├─gsd-disk-utilit───2*[{gsd-disk-utilit}]
+        │         │                 ├─update-notifier───3*[{update-notifier}]
+        │         │                 └─3*[{gnome-session-b}]
+        │         ├─gnome-session-c───{gnome-session-c}
+        │         ├─gnome-shell─┬─gjs───11*[{gjs}]
+        │         │             └─27*[{gnome-shell}]
+        │         ├─gnome-shell-cal───5*[{gnome-shell-cal}]
+        │         ├─gnome-terminal-─┬─bash───pstree
+        │         │                 └─4*[{gnome-terminal-}]
+        │         ├─goa-daemon───3*[{goa-daemon}]
+        │         ├─goa-identity-se───2*[{goa-identity-se}]
+        │         ├─gsd-a11y-settin───3*[{gsd-a11y-settin}]
+        │         ├─gsd-color───3*[{gsd-color}]
+        │         ├─gsd-datetime───3*[{gsd-datetime}]
+        │         ├─gsd-housekeepin───3*[{gsd-housekeepin}]
+        │         ├─gsd-keyboard───3*[{gsd-keyboard}]
+        │         ├─gsd-media-keys───3*[{gsd-media-keys}]
+        │         ├─gsd-power───3*[{gsd-power}]
+        │         ├─gsd-print-notif───2*[{gsd-print-notif}]
+        │         ├─gsd-printer───2*[{gsd-printer}]
+        │         ├─gsd-rfkill───2*[{gsd-rfkill}]
+        │         ├─gsd-screensaver───2*[{gsd-screensaver}]
+        │         ├─gsd-sharing───3*[{gsd-sharing}]
+        │         ├─gsd-smartcard───3*[{gsd-smartcard}]
+        │         ├─gsd-sound───3*[{gsd-sound}]
+        │         ├─gsd-wacom───3*[{gsd-wacom}]
+        │         ├─gvfs-afc-volume───3*[{gvfs-afc-volume}]
+        │         ├─gvfs-goa-volume───2*[{gvfs-goa-volume}]
+        │         ├─gvfs-gphoto2-vo───2*[{gvfs-gphoto2-vo}]
+        │         ├─gvfs-mtp-volume───2*[{gvfs-mtp-volume}]
+        │         ├─gvfs-udisks2-vo───3*[{gvfs-udisks2-vo}]
+        │         ├─gvfsd─┬─gvfsd-trash───2*[{gvfsd-trash}]
+        │         │       └─2*[{gvfsd}]
+        │         ├─gvfsd-fuse───5*[{gvfsd-fuse}]
+        │         ├─gvfsd-metadata───2*[{gvfsd-metadata}]
+        │         ├─ibus-portal───2*[{ibus-portal}]
+        │         ├─nautilus───4*[{nautilus}]
+        │         ├─pipewire───{pipewire}
+        │         ├─pipewire-media-───{pipewire-media-}
+        │         ├─pulseaudio───2*[{pulseaudio}]
+        │         ├─sh───ibus-daemon─┬─ibus-engine-sim───2*[{ibus-engine-sim}]
+        │         │                  ├─ibus-extension-───3*[{ibus-extension-}]
+        │         │                  ├─ibus-memconf───2*[{ibus-memconf}]
+        │         │                  └─2*[{ibus-daemon}]
+        │         ├─snap-store───4*[{snap-store}]
+        │         ├─snapd-desktop-i───snapd-desktop-i───4*[{snapd-desktop-i}]
+        │         ├─tracker-miner-f───5*[{tracker-miner-f}]
+        │         ├─xdg-desktop-por───5*[{xdg-desktop-por}]
+        │         ├─2*[xdg-desktop-por───3*[{xdg-desktop-por}]]
+        │         ├─xdg-document-po─┬─fusermount3
+        │         │                 └─5*[{xdg-document-po}]
+        │         └─xdg-permission-───2*[{xdg-permission-}]
+        ├─systemd-journal
+        ├─systemd-logind
+        ├─systemd-oomd
+        ├─systemd-resolve
+        ├─systemd-timesyn───{systemd-timesyn}
+        ├─systemd-udevd
+        ├─thermald───{thermald}
+        ├─udisksd───4*[{udisksd}]
+        ├─unattended-upgr───{unattended-upgr}
+        ├─upowerd───2*[{upowerd}]
+        └─wpa_supplicant
+dbit@IT2-36:~/Desktop/termopobgtn$ nice
+0
+dbit@IT2-36:~/Desktop/termopobgtn$ renice
+renice: not enough arguments
+Try 'renice --help' for more information.
+dbit@IT2-36:~/Desktop/termopobgtn$ kill
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+dbit@IT2-36:~/Desktop/termopobgtn$ kill 1234
+bash: kill: (1234) - No such process
+dbit@IT2-36:~/Desktop/termopobgtn$ pkill firefox
+dbit@IT2-36:~/Desktop/termopobgtn$ killall
+Usage: killall [OPTION]... [--] NAME...
+       killall -l, --list
+       killall -V, --version
+
+  -e,--exact          require exact match for very long names
+  -I,--ignore-case    case insensitive process name match
+  -g,--process-group  kill process group instead of process
+  -y,--younger-than   kill processes younger than TIME
+  -o,--older-than     kill processes older than TIME
+  -i,--interactive    ask for confirmation before killing
+  -l,--list           list all known signal names
+  -q,--quiet          don't print complaints
+  -r,--regexp         interpret NAME as an extended regular expression
+  -s,--signal SIGNAL  send this signal instead of SIGTERM
+  -u,--user USER      kill only process(es) running as USER
+  -v,--verbose        report if the signal was successfully sent
+  -V,--version        display version information
+  -w,--wait           wait for processes to die
+  -n,--ns PID         match processes that belong to the same namespaces
+                      as PID
+  -Z,--context REGEXP kill only process(es) having context
+                      (must precede other arguments)
+
+dbit@IT2-36:~/Desktop/termopobgtn$ killall ngnix
+ngnix: no process found
+dbit@IT2-36:~/Desktop/termopobgtn$ killall -v
+Usage: killall [OPTION]... [--] NAME...
+       killall -l, --list
+       killall -V, --version
+
+  -e,--exact          require exact match for very long names
+  -I,--ignore-case    case insensitive process name match
+  -g,--process-group  kill process group instead of process
+  -y,--younger-than   kill processes younger than TIME
+  -o,--older-than     kill processes older than TIME
+  -i,--interactive    ask for confirmation before killing
+  -l,--list           list all known signal names
+  -q,--quiet          don't print complaints
+  -r,--regexp         interpret NAME as an extended regular expression
+  -s,--signal SIGNAL  send this signal instead of SIGTERM
+  -u,--user USER      kill only process(es) running as USER
+  -v,--verbose        report if the signal was successfully sent
+  -V,--version        display version information
+  -w,--wait           wait for processes to die
+  -n,--ns PID         match processes that belong to the same namespaces
+                      as PID
+  -Z,--context REGEXP kill only process(es) having context
+                      (must precede other arguments)
+
+dbit@IT2-36:~/Desktop/termopobgtn$ xkill
+Select the window whose client you wish to kill with button 1....
+1
+^C
+dbit@IT2-36:~/Desktop/termopobgtn$ fg
+bash: fg: current: no such job
+dbit@IT2-36:~/Desktop/termopobgtn$ fg
+bash: fg: current: no such job
+dbit@IT2-36:~/Desktop/termopobgtn$ fg
+bash: fg: current: no such job
+dbit@IT2-36:~/Desktop/termopobgtn$ bg
+bash: bg: current: no such job
+dbit@IT2-36:~/Desktop/termopobgtn$ pgrep
+pgrep: no matching criteria specified
+Try `pgrep --help' for more information.
+dbit@IT2-36:~/Desktop/termopobgtn$ 
+
+
+
+
+dbit@IT2-36:~/Desktop/termopobgtn$ free
+               total        used        free      shared  buff/cache   available
+Mem:        16133744     1412908    12269148      429748     2451688    13978444
+Swap:       29296636           0    29296636
+dbit@IT2-36:~/Desktop/termopobgtn$ /proc/meminfo
+bash: /proc/meminfo: Permission denied
+dbit@IT2-36:~/Desktop/termopobgtn$ top
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:49:04 up 22 min,  1 user,  load average: 0.08, 0.13, 0.09
+Tasks: 305 total,   1 running, 304 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.1 us,  0.0 sy,  0.0 ni, 99.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  15755.6 total,  11982.3 free,   1377.6 used,   2395.7 buff/cache
+MiB Swap:  28610.0 total,  28610.0 free,      0.0 used.  13651.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+   4313 dbit      20   0   13220   4224   3328 R   0.3   0.0   0:00.02 top      
+      1 root      20   0  167100  11364   8036 S   0.0   0.1   0:02.27 systemd  
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd 
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ 
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+ 
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns    
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ 
+      9 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ 
+     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+ 
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ 
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ 
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ 
+     15 root      20   0       0      0      0 S   0.0   0.0   0:00.01 ksoftir+ 
+     16 root      20   0       0      0      0 I   0.0   0.0   0:00.87 rcu_pre+ 
+     17 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migrati+ 
+     18 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_in+ 
+Help for Interactive Commands - procps-ng 3.3.17
+Window 1:Def: Cumulative mode Off.  System: Delay 3.0 secs; Secure mode Off.
+
+  Z,B,E,e   Global: 'Z' colors; 'B' bold; 'E'/'e' summary/task memory scale
+  l,t,m,I   Toggle: 'l' load avg; 't' task/cpu; 'm' memory; 'I' Irix mode
+  0,1,2,3,4 Toggle: '0' zeros; '1/2/3' cpu/numa views; '4' cpus two abreast
+  f,F,X     Fields: 'f'/'F' add/remove/order/sort; 'X' increase fixed-width
+
+  L,&,<,> . Locate: 'L'/'&' find/again; Move sort column: '<'/'>' left/right
+  R,H,J,C . Toggle: 'R' Sort; 'H' Threads; 'J' Num justify; 'C' Coordinates
+  c,i,S,j . Toggle: 'c' Cmd name/line; 'i' Idle; 'S' Time; 'j' Str justify
+  x,y     . Toggle highlights: 'x' sort field; 'y' running tasks
+  z,b     . Toggle: 'z' color/mono; 'b' bold/reverse (only if 'x' or 'y')
+  u,U,o,O . Filter by: 'u'/'U' effective/any user; 'o'/'O' other criteria
+  n,#,^O  . Set: 'n'/'#' max tasks displayed; Show: Ctrl+'O' other filter(s)
+  V,v     . Toggle: 'V' forest view; 'v' hide/show forest view children
+
+  k,r       Manipulate tasks: 'k' kill; 'r' renice
+  d or s    Set update interval
+  W,Y,!     Write config file 'W'; Inspect other output 'Y'; Combine Cpus '!'
+  q         Quit
+          ( commands shown with '.' require a visible task display window ) 
+Press 'h' or '?' for help with Windows,
+Type 'q' or <Esc> to continue 
+Help for Interactive Commands - procps-ng 3.3.17
+Window 1:Def: Cumulative mode Off.  System: Delay 3.0 secs; Secure mode Off.
+
+  Z,B,E,e   Global: 'Z' colors; 'B' bold; 'E'/'e' summary/task memory scale
+  l,t,m,I   Toggle: 'l' load avg; 't' task/cpu; 'm' memory; 'I' Irix mode
+  0,1,2,3,4 Toggle: '0' zeros; '1/2/3' cpu/numa views; '4' cpus two abreast
+  f,F,X     Fields: 'f'/'F' add/remove/order/sort; 'X' increase fixed-width
+
+  L,&,<,> . Locate: 'L'/'&' find/again; Move sort column: '<'/'>' left/right
+  R,H,J,C . Toggle: 'R' Sort; 'H' Threads; 'J' Num justify; 'C' Coordinates
+  c,i,S,j . Toggle: 'c' Cmd name/line; 'i' Idle; 'S' Time; 'j' Str justify
+  x,y     . Toggle highlights: 'x' sort field; 'y' running tasks
+  z,b     . Toggle: 'z' color/mono; 'b' bold/reverse (only if 'x' or 'y')
+  u,U,o,O . Filter by: 'u'/'U' effective/any user; 'o'/'O' other criteria
+  n,#,^O  . Set: 'n'/'#' max tasks displayed; Show: Ctrl+'O' other filter(s)
+  V,v     . Toggle: 'V' forest view; 'v' hide/show forest view children
+
+  k,r       Manipulate tasks: 'k' kill; 'r' renice
+  d or s    Set update interval
+  W,Y,!     Write config file 'W'; Inspect other output 'Y'; Combine Cpus '!'
+  q         Quit
+          ( commands shown with '.' require a visible task display window ) 
+Press 'h' or '?' for help with Windows,
+Type 'q' or <Esc> to continue 
+Help for Interactive Commands - procps-ng 3.3.17
+Window 1:Def: Cumulative mode Off.  System: Delay 3.0 secs; Secure mode Off.
+
+  Z,B,E,e   Global: 'Z' colors; 'B' bold; 'E'/'e' summary/task memory scale
+  l,t,m,I   Toggle: 'l' load avg; 't' task/cpu; 'm' memory; 'I' Irix mode
+  0,1,2,3,4 Toggle: '0' zeros; '1/2/3' cpu/numa views; '4' cpus two abreast
+  f,F,X     Fields: 'f'/'F' add/remove/order/sort; 'X' increase fixed-width
+
+  L,&,<,> . Locate: 'L'/'&' find/again; Move sort column: '<'/'>' left/right
+  R,H,J,C . Toggle: 'R' Sort; 'H' Threads; 'J' Num justify; 'C' Coordinates
+  c,i,S,j . Toggle: 'c' Cmd name/line; 'i' Idle; 'S' Time; 'j' Str justify
+  x,y     . Toggle highlights: 'x' sort field; 'y' running tasks
+  z,b     . Toggle: 'z' color/mono; 'b' bold/reverse (only if 'x' or 'y')
+  u,U,o,O . Filter by: 'u'/'U' effective/any user; 'o'/'O' other criteria
+  n,#,^O  . Set: 'n'/'#' max tasks displayed; Show: Ctrl+'O' other filter(s)
+  V,v     . Toggle: 'V' forest view; 'v' hide/show forest view children
+
+  k,r       Manipulate tasks: 'k' kill; 'r' renice
+  d or s    Set update interval
+  W,Y,!     Write config file 'W'; Inspect other output 'Y'; Combine Cpus '!'
+  q         Quit
+          ( commands shown with '.' require a visible task display window ) 
+Press 'h' or '?' for help with Windows,
+Type 'q' or <Esc> to continue 
+Help for Interactive Commands - procps-ng 3.3.17
+Window 1:Def: Cumulative mode Off.  System: Delay 3.0 secs; Secure mode Off.
+
+  Z,B,E,e   Global: 'Z' colors; 'B' bold; 'E'/'e' summary/task memory scale
+  l,t,m,I   Toggle: 'l' load avg; 't' task/cpu; 'm' memory; 'I' Irix mode
+  0,1,2,3,4 Toggle: '0' zeros; '1/2/3' cpu/numa views; '4' cpus two abreast
+  f,F,X     Fields: 'f'/'F' add/remove/order/sort; 'X' increase fixed-width
+
+  L,&,<,> . Locate: 'L'/'&' find/again; Move sort column: '<'/'>' left/right
+  R,H,J,C . Toggle: 'R' Sort; 'H' Threads; 'J' Num justify; 'C' Coordinates
+  c,i,S,j . Toggle: 'c' Cmd name/line; 'i' Idle; 'S' Time; 'j' Str justify
+  x,y     . Toggle highlights: 'x' sort field; 'y' running tasks
+  z,b     . Toggle: 'z' color/mono; 'b' bold/reverse (only if 'x' or 'y')
+  u,U,o,O . Filter by: 'u'/'U' effective/any user; 'o'/'O' other criteria
+  n,#,^O  . Set: 'n'/'#' max tasks displayed; Show: Ctrl+'O' other filter(s)
+  V,v     . Toggle: 'V' forest view; 'v' hide/show forest view children
+
+  k,r       Manipulate tasks: 'k' kill; 'r' renice
+  d or s    Set update interval
+  W,Y,!     Write config file 'W'; Inspect other output 'Y'; Combine Cpus '!'
+  q         Quit
+          ( commands shown with '.' require a visible task display window ) 
+Press 'h' or '?' for help with Windows,
+Type 'q' or <Esc> to continue 
+top - 09:49:13 up 22 min,  1 user,  load average: 0.06, 0.12, 0.09
+Tasks: 305 total,   1 running, 304 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.9 us,  0.2 sy,  0.0 ni, 98.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  15755.6 total,  11983.6 free,   1377.9 used,   2394.1 buff/cache
+MiB Swap:  28610.0 total,  28610.0 free,      0.0 used.  13653.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+   1633 dbit      20   0 5833216 269708 132924 S   7.6   1.7   0:20.72 gnome-s+ 
+   4055 dbit      20   0  572428  74088  42952 S   6.0   0.5   0:07.42 gedit    
+   2660 dbit      20   0  554660  52004  39668 S   1.7   0.3   0:04.15 gnome-t+ 
+     16 root      20   0       0      0      0 I   0.3   0.0   0:00.88 rcu_pre+ 
+    119 root      20   0       0      0      0 I   0.3   0.0   0:00.64 kworker+ 
+    138 root       0 -20       0      0      0 I   0.3   0.0   0:00.55 kworker+ 
+    632 root      20   0  678936  18304  15488 S   0.3   0.1   0:01.52 Network+ 
+   3365 root      20   0       0      0      0 I   0.3   0.0   0:00.16 kworker+ 
+   4313 dbit      20   0   13220   4224   3328 R   0.3   0.0   0:00.04 top      
+      1 root      20   0  167100  11364   8036 S   0.0   0.1   0:02.27 systemd  
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd 
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ 
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+ 
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns    
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ 
+      9 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ 
+top - 09:49:20 up 22 min,  1 user,  load average: 0.06, 0.12, 0.09
+Tasks: 305 total,   1 running, 304 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.9 us,  2.9 sy,  0.0 ni, 94.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  15755.6 total,  11985.2 free,   1375.4 used,   2395.1 buff/cache
+MiB Swap:  28610.0 total,  28610.0 free,      0.0 used.  13654.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+   1633 dbit      20   0 5834220 269708 132924 S  33.3   1.7   0:20.88 gnome-s+ 
+      1 root      20   0  167100  11364   8036 S   0.0   0.1   0:02.27 systemd  
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd 
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ 
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+ 
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns    
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ 
+      9 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+ 
+     11 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+ 
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ 
+     13 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ 
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tas+ 
+     15 root      20   0       0      0      0 S   0.0   0.0   0:00.01 ksoftir+ 
+     16 root      20   0       0      0      0 I   0.0   0.0   0:00.88 rcu_pre+ 
+     17 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migrati+ 
+     18 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_in+ 
+dbit@IT2-36:~/Desktop/termopobgtn$ htop
+Command 'htop' not found, but can be installed with:
+sudo snap install htop  # version 3.3.0, or
+sudo apt  install htop  # version 3.0.5-7build2
+See 'snap info htop' for additional versions.
+dbit@IT2-36:~/Desktop/termopobgtn$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+tmpfs            1613376     2592   1610784   1% /run
+/dev/nvme0n1p2  95535524   370116  90266236   1% /
+/dev/nvme0n1p5  76319516  9141052  63255828  13% /usr
+tmpfs            8066872        0   8066872   0% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+efivarfs             256      113       139  45% /sys/firmware/efi/efivars
+/dev/nvme0n1p3   4721184   194324   4266356   5% /boot
+/dev/nvme0n1p4  95535524 10506832  80129520  12% /home
+/dev/nvme0n1p6  76319516  7327068  65069812  11% /var
+/dev/nvme0n1p1     94759     5329     89430   6% /boot/efi
+tmpfs            1613372      112   1613260   1% /run/user/1000
+dbit@IT2-36:~/Desktop/termopobgtn$ du
+4	.
+dbit@IT2-36:~/Desktop/termopobgtn$ vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 12276748  91796 2361340    0    0    87    20  291   90  0  0 99  0  0
+dbit@IT2-36:~/Desktop/termopobgtn$ dmidecode
+# dmidecode 3.3
+/sys/firmware/dmi/tables/smbios_entry_point: Permission denied
+Scanning /dev/mem for entry point.
+/dev/mem: Permission denied
+dbit@IT2-36:~/Desktop/termopobgtn$ sar
+Command 'sar' not found, but can be installed with:
+sudo apt install sysstat
+dbit@IT2-36:~/Desktop/termopobgtn$ sudo apt install sysstat
+[sudo] password for dbit: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  isag
+The following NEW packages will be installed:
+  sysstat
+0 upgraded, 1 newly installed, 0 to remove and 107 not upgraded.
+Need to get 487 kB of archives.
+After this operation, 1,507 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 sysstat amd64 12.5.2-2ubuntu0.2 [487 kB]
+Fetched 487 kB in 1s (479 kB/s)  
+Preconfiguring packages ...
+Selecting previously unselected package sysstat.
+(Reading database ... 226059 files and directories currently installed.)
+Preparing to unpack .../sysstat_12.5.2-2ubuntu0.2_amd64.deb ...
+Unpacking sysstat (12.5.2-2ubuntu0.2) ...
+Setting up sysstat (12.5.2-2ubuntu0.2) ...
+
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in
+ auto mode
+Created symlink /etc/systemd/system/sysstat.service.wants/sysstat-collect.timer 
+→ /lib/systemd/system/sysstat-collect.timer.
+Created symlink /etc/systemd/system/sysstat.service.wants/sysstat-summary.timer 
+→ /lib/systemd/system/sysstat-summary.timer.
+Created symlink /etc/systemd/system/multi-user.target.wants/sysstat.service → /l
+ib/systemd/system/sysstat.service.
+Processing triggers for man-db (2.10.2-1) ...
+dbit@IT2-36:~/Desktop/termopobgtn$ sar
+Cannot open /var/log/sysstat/sa28: No such file or directory
+Please check if data collecting is enabled
+dbit@IT2-36:~/Desktop/termopobgtn$ sar -r
+Cannot open /var/log/sysstat/sa28: No such file or directory
+Please check if data collecting is enabled
+dbit@IT2-36:~/Desktop/termopobgtn$ pagesize
+Command 'pagesize' not found, but can be installed with:
+sudo apt install libhugetlbfs-bin
+dbit@IT2-36:~/Desktop/termopobgtn$ sudo apt install libhugetlbfs-bin
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  libhugetlbfs
+The following NEW packages will be installed:
+  libhugetlbfs-bin
+0 upgraded, 1 newly installed, 0 to remove and 107 not upgraded.
+Need to get 54.0 kB of archives.
+After this operation, 263 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libhugetlbfs-bin amd64 2.23-4 [54.0 kB]
+Fetched 54.0 kB in 6s (8,350 B/s)                                              
+Selecting previously unselected package libhugetlbfs-bin.
+(Reading database ... 226121 files and directories currently installed.)
+Preparing to unpack .../libhugetlbfs-bin_2.23-4_amd64.deb ...
+Unpacking libhugetlbfs-bin (2.23-4) ...
+Setting up libhugetlbfs-bin (2.23-4) ...
+Processing triggers for man-db (2.10.2-1) ...
+dbit@IT2-36:~/Desktop/termopobgtn$ pagesize
+4096
+dbit@IT2-36:~/Desktop/termopobgtn$ 
+
+
