@@ -79,6 +79,17 @@ dmypy.json
 # Python pyre type checker
 .pyre/
 
+# Node.js / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
 # IDE specific files
 .vscode/
 .idea/
@@ -105,3 +116,5 @@ Desktop.ini
 *.zip
 *.tar.gz
 *.rar
+
+
