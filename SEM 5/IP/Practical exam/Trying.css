@@ -1,0 +1,8 @@
+ /* p{ font-family : Arial, Times, serif; font-size: 16px; color: blue; }
+            body { background-color: lightgray; } 
+            ol{ list-style: upper-roman;}
+            ul { list-style: square;} */
+    p{ font-family : Arial, Times, serif; font-size: 16px; color: blue; }
+    body { background-color: lightgray; }
+    ol{ list-style: upper-roman;}
+    ul { list-style: square;}

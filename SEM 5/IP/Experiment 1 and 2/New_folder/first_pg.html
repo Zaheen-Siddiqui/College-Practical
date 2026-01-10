@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <style>
+        body {
+            background-color: darkblue;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Marquee Style */
+        marquee {
+            font-size: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        /* Heading Style */
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Container for the images */
+        .d-flex {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Each image container */
+        .p-2 {
+            background-color: gray;
+            padding: 10px;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1 1 300px; /* Flexible box with minimum width of 300px */
+            max-width: 425px; /* Maximum width to prevent large images */
+            box-sizing: border-box;
+        }
+
+        .p-2 img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: auto;
+        }
+
+        .p-2 img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Link Style */
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Marquee Text -->
+    <marquee>This site is not made for entertainment/testing/legal reasons/business reasons and is only made for part two</marquee>
+
+    <!-- Page Heading -->
+    <h1>First Page</h1>
+
+    <!-- Image Gallery -->
+    <div class="d-flex">
+        <div class="p-2">
+            <a href="file:///home/dbit/Desktop/IT%2056%20Zaheen%20/Decimal-to-binary.png">
+                <img src="Decimal-to-binary.png" alt="Decimal to Binary Conversion" />
+            </a>
+        </div>
+
+        <div class="p-2">
+            <a href="file:///home/dbit/Desktop/IT%2056%20Zaheen%20/java-basic-image-exercise-23.png">
+                <img src="java-basic-image-exercise-23.png" alt="Java Basic Exercise" />
+            </a>
+        </div>
+
+        <div class="p-2">
+            <a href="file:///home/dbit/Desktop/IT%2056%20Zaheen%20/What-are-Decimal-and-Hexadecimal-Conversion.webp">
+                <img src="What-are-Decimal-and-Hexadecimal-Conversion.webp" alt="Decimal and Hexadecimal Conversion" />
+            </a>
+        </div>
+
+        <div class="p-2">
+            <a href="file:///home/dbit/Desktop/IT%2056%20Zaheen%20/What-are-Decimal-and-Octal-Conversion.webp">
+                <img src="What-are-Decimal-and-Octal-Conversion.webp" alt="Decimal and Octal Conversion" />
+            </a>
+        </div>
+    </div>
+
+    <!-- Link to Next Page -->
+    <a href="file:///home/dbit/Desktop/IT%2056%20Zaheen%20/second_pg.html">Next page</a>
+
+</body>
+</html>

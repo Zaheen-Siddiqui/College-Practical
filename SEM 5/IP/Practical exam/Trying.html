@@ -1,0 +1,44 @@
+<!-- Experiment 1 - Design a Basic Web page using HTML 5Assignment
+Design a Basic Web page using HTML 5 tags Head, Body, Hyperlink, Formatting styles, Images and Table.
+Experiment 2 - Design a web pages using advance HTML5.Assignment
+Design a web pages using advance HTML5, List, Frames, Forms, Multimedia tags of HTML5
+Experiment 3 - Design a web pages using CSS3 stylesAssignment
+Design a web pages using CSS3 styles Color, Background, Fonts, Tables, Lists 
+Experiment 4 - Design a Web pages using Advance CSS3.Assignment
+Design a Web pages using CSS3 selectors, Pseudo classes, Pseudo elements 
+Experiment 5 - Design a web pages using BootstrapAssignment
+Design a web pages using Bootstrap Grid system, Forms, Button, Navbar
+Experiment 6 - Design a web page using JavaScript ValidationAssignment
+Design a web page using JavaScript Variables, Operators, Conditions, Loops, Functions, Events, Classes and Objects 
+Experiment 7 - To Create a web pages using React Form ValidationsAssignment
+To Create a web pages using JavaScript Validations, Arrays, String, Date function
+Experiment 8 - To Design a web page using React Props and StateAssignment
+Installation and Configuration of React JS, JSX, Components, Props, State
+Experiment - 9 To Design a web pages using ReactJS HooksAssignment
+Create a web pages using ReactJS Forms, Events, Routers, Refs, Keys.-->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>title</title>
+        
+    </head>
+    <body>
+        <form onsubmit="validate()" method="get">
+            <label>Name<input type="text" id="name"></label><br>
+            <label>age<input type="number" id="age" ></label><br>
+            <button type ="submit">Submit</button>
+        </form>
+        <script>
+            function validate(){
+                name= document.getElementById("name").value.trim()
+                age = document.getElementById("age").value
+                if(!name){ alert("Enter valid (name"); return false;}
+                if(!(age>0 && age<120)){ alert("Enter age between"); return false;}
+                alert("OK" + JSON.stringify({name,age}))
+                return false;
+            }
+        </script>
+    </body>
+</html>

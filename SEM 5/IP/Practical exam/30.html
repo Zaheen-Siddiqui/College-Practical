@@ -1,0 +1,92 @@
+export default function Profile ({name, age}){
+    return <div><h3>{name}</h3><p>Age: {age}</p></div>
+}
+
+import useState from 'react';
+import Profile from './Profile.jsx'
+export default function app(){
+    const [name, setName] = useState("");
+    const [age, setAge] = useState(20);
+    const [item, setItem] = useState ([]);
+    Function add(){
+        if(name.trim().length<3) return alert("Min 3 char")
+        setItem (prev =>[ ...prev, {id : Date.now(), text: name.trim()}])
+    }
+
+    return(
+        <div>
+            <Profile name = 'Zaheen' age = {age}/>
+            <buton onClick{()=>setAge(a =a+1)}>Increase age</buton>
+            <h2>React Form</h2>
+            <input value ={name} onChange={ e=>setName(e.target.value)} placehoder="name"/>
+            <button onClick={add}>Add</button>
+            <ul>{items.map {it => <li key={it.id}>{it.text}({new Date(it.id).toLocaleTimeString()})</li></ul>
+        </div>
+    );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default function Profile({name, age}){
+    return <div><h3>{name}</h3><p>Age: {age}</p></div>
+}
+
+import useState from 'react';
+import Profile form './Profile.jsx';
+
+export default function app(){
+    const [name, setName]=useState("");
+    const [age, setAge]=useState(20);
+    const [item, setItem]=useState([]);
+    function add(){
+        if(name.trim().length<3 return alert("Min 3"))
+        setItem (prev => [... prev, {id: Date.now(), text: name.trim()}])
+    }
+
+    return(
+        <div>
+            <Profile name="Zaheen", age = {age}/>
+            <button onClick{()=> setAge(a=a+1)> Increaase age</button>
+            <h3>React Form</h3>
+            <input value = "name"onChange {e=>setName(e.target.value)} placeholder ="name"/>
+            <button onClick{add} >ADD</button>
+            <ul>{item.map(it =>  <li key = {it.id}>{it.text} ({new Date(it.id).toLocateTimeString()})</li></ul>
+        </div>
+    )
+}

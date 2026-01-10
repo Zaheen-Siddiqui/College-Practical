@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exp4 - Advanced CSS3</title>
+  <style>
+    /* selector */
+    .card > p:first-child { font-weight: bold; }
+    /* pseudo-class */
+    a:hover { text-decoration: underline; }
+    /* pseudo-element */
+    h2::after { content: " •"; color: red; }
+  </style>
+</head>
+<body>
+  <h2>Title</h2>
+  <div class="card">
+    <p>Leading paragraph</p>
+    <p>Other text</p>
+  </div>
+  <a href="#">Hover me</a>
+</body>
+</html>
