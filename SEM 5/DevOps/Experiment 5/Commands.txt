@@ -1,0 +1,33 @@
+Build everything:
+
+docker compose up --build -d
+
+Start Services
+
+docker-compose up -d
+
+Rebuild only a single service:
+
+docker-compose build load-balancer
+# or
+docker compose build load-balancer
+
+
+Start only load-balancer (useful after rebuilding):
+
+docker-compose up -d load-balancer
+# or
+docker compose up -d load-balancer
+
+
+Stop and remove everything:
+
+docker-compose down
+# or
+docker compose down
+
+
+See container IPs and network info:
+
+docker network inspect <project>_lb-net
+# or inspect the network name printed by `docker network ls`

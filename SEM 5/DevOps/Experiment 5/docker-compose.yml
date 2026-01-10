@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  server1:
+    build: "./server1"
+    container_name: server1
+    networks:
+      - lb-net
+
+  server2:
+    build: "./server2"
+    container_name: server2
+    networks:
+      - lb-net
+
+  server3:
+    build: "./server3"
+    container_name: server3
+    networks:
+      - lb-net
+
+  load-balancer:
+    build: "./loadbalancer"
+    container_name: load-balancer
+    ports:
+      - "9090:80"
+    depends_on:
+      - server1
+      - server2
+      - server3
+    networks:
+      - lb-net
+
+networks:
+  lb-net:
+    driver: bridge
