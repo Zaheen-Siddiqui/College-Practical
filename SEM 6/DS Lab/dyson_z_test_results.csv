@@ -1,0 +1,9 @@
+Sample Size (n),Standard Error (σ/√n),Z-Statistic,p-value (approx),Decision (α = 0.05),Interpretation
+4,1.25,2.22,0.0261,Reject H₀,Statistically significant difference
+9,0.83,2.75,0.0059,Reject H₀,Very strong evidence
+16,0.62,1.82,0.0691,Do not reject H₀,Very close to significance
+25,0.5,1.58,0.1134,Do not reject H₀,Trending but not significant
+36,0.42,1.9,0.0568,Do not reject H₀,Very close to significance
+49,0.36,2.0,0.0452,Reject H₀,Statistically significant difference
+64,0.31,2.31,0.0208,Reject H₀,Statistically significant difference
+100,0.25,3.76,0.0002,Reject H₀,Very strong evidence
